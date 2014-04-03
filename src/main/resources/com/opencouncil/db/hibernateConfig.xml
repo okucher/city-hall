@@ -10,14 +10,15 @@
         <props>
             <prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
             <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+            <prop key="hibernate.current_session_context_class">thread</prop>
         </props>
     </property>
-    <property name="mappingResources" value="com/opencouncil/hibernate/example/Test.hbm.xml"/>
+    <property name="mappingResources" value="com/opencouncil/db/example/Test.hbm.xml"/>
 </bean>
 
 
 <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
-      <property name="driverClassName" value="${jdbc.driverClassName}" />
+      <property name="driverClass" value="${jdbc.driverClassName}" />
       <property name="url" value="${jdbc.url}" />
       <property name="username" value="${jdbc.user}" />
       <property name="password" value="${jdbc.pass}" />

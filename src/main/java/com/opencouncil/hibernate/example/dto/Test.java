@@ -3,18 +3,19 @@ package com.opencouncil.hibernate.example.dto;
 public class Test {
 
     private int id;
-    private String text;
+    private String test;
+
     public int getId() {
         return id;
     }
     public void setId(int id) {
         this.id = id;
     }
-    public String getText() {
-        return text;
+    public String getTest() {
+        return test;
     }
-    public void setText(String text) {
-        this.text = text;
+    public void setTest(String test) {
+        this.test = test;
     }
     
 }

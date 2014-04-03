@@ -19,7 +19,7 @@
 
         <property name="locations">
             <list>
-                <value>classpath:env/city-hall-default.properties.properties</value>
+                <value>classpath:env/city-hall-default.properties</value>
                 <value>classpath:env/city-hall-${env}.properties</value>
             </list>
         </property>

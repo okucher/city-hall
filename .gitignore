@@ -3,6 +3,8 @@
 .settings/
 target
 *.class
+.idea/
+city-hall.iml
 
 # Package Files #
 *.jar

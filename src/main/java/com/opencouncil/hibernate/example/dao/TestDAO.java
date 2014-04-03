@@ -1,18 +1,17 @@
 package com.opencouncil.hibernate.example.dao;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
+import com.opencouncil.hibernate.example.dto.Test;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
-import com.opencouncil.hibernate.example.dto.Test;
+import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 @Component
 public class TestDAO {
@@ -24,7 +23,7 @@ public class TestDAO {
     }
     
     
-    @Autowired
+    @Resource(name="sessionFactory")
     SessionFactory sessionFactory;
 
     protected Session getCurrentSession(){
