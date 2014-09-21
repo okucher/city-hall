@@ -7,7 +7,7 @@
 <c:forEach items="${testList}" var="test">
     <tr>
         <td>${test.id}</td>
-        <td>${test.text}</td>
+        <td>${test.test}</td>
     </tr>
 </c:forEach>
 </table> 

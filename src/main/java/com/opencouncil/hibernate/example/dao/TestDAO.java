@@ -70,11 +70,13 @@ public class TestDAO {
         try {
             transaction = session.beginTransaction();
             testList = session.createQuery("from Test").list();
+            transaction.commit();
         } catch (Exception e) {
             if (transaction != null) {
                 transaction.rollback();
             }
         }
+        
         return testList;
     }
     
